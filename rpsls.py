@@ -1,5 +1,6 @@
-# Rock-paper-scissors-lizard-Spock template
-
+# Author: Arush Gupta
+# Date: 2nd June, 2015
+# Filename: rspls.py
 
 # The key idea of this program is to equate the strings
 # "rock", "paper", "scissors", "lizard", "Spock" to numbers
@@ -17,10 +18,7 @@ import math
 import random
 
 def name_to_number(name):
-    # delete the following pass statement and fill in your code below
-    
 
-    # convert name to number using if/elif/else
     if name == "rock":
         return 0
     elif name == "Spock":
@@ -33,13 +31,9 @@ def name_to_number(name):
         return 4
     else:
         return -1
-    # don't forget to return the result!
-
 
 def number_to_name(number):
-    # delete the following pass statement and fill in your code below
-    
-    # convert number to a name using if/elif/else
+
     if number == 0:
         return "rock"
     elif number == 1:
@@ -52,9 +46,6 @@ def number_to_name(number):
         return "scissors"
     else:
         return "error"
-    
-    # don't forget to return the result!
-    
 
 def rpsls(player_choice): 
     player_number = name_to_number(player_choice)
